@@ -1,0 +1,52 @@
+  <!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohil Restoran - Elektron Menyu</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <!-- <h1>Sohil Restoran</h1> -->
+             <img src="logo.png" alt="Sohil" width="450px" height="200px">
+            <p>Stol №<span id="table-number">0</span></p>
+        </header>
+
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="drinks">Ichimliklar</button>
+            <button class="category-btn" data-category="salads">Salatlar</button>
+            <button class="category-btn" data-category="national">Milliy Taomlar</button>
+            <button class="category-btn" data-category="fish">Baliqli va Go'shli Taomlar</button>
+            <button class="category-btn" data-category="desserts">Shirinliklar</button>
+            <button class="category-btn" data-category="Xizmat">Ofisant xizmati</button>
+        </div>
+
+        <div class="menu-items-container" id="menu-items">
+            <!-- Menyu elementlari JavaScript orqali yuklanadi -->
+        </div>
+
+        <div class="order-summary">
+            <h2><i class="fas fa-shopping-cart"></i> Buyurtma</h2>
+            <div class="order-items" id="order-items">
+                <!-- Buyurtmalar ro'yxati -->
+            </div>
+            <div class="order-total">
+                <p>Jami: <span id="total-amount">0</span> so'm</p>
+                <button id="submit-order">Buyurtma berish</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Buyurtmangiz qabul qilindi!</h2>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
